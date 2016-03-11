@@ -1,0 +1,5 @@
+  * Download and unzip data files dbSib-XXXX.jtalis.tar.gz (static data) and rdfPostStream-YYYY-month1.jtalis.tar.gz (stream of posts) for test cases that you want to test.
+  * Download and unzip the file queryX.jtalis.tar.gz for the query that you want to run. In the unzipped folder, you will find a file _.event_ and some file _config.xml_ or _config-multiple.xml_, depending on whether we ran this query with the scalability test wrt. the number of queries. This folder also contains log files of the tests that we experimented.
+  * Modify config.xml or config-multiple.xml to point to the input data/stream files.
+  * Finally, run: $JTALIS\_HOME/scripts/jtalis-run.sh $JTALIS\_HOME/pom.xml $PATH\_TO\_CONFIG\_FILE
+  * You can certainly use the [data generator](http://code.google.com/p/lsbench/wiki/benchmark_usecase) to generate test cases with parameters set to values of your need, modify the config file, and run the test with the same command.
